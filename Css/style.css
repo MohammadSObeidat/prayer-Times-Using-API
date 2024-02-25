@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+} 
+.headind {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 40px;
+}.headind .select-city select{
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: end;
+    font-size: 25px;
+}
+.headind .city-day .city,.day {
+    color: #fff;
+}
+.headind .city-day .city h1 {
+    font-size: 100px;
+    text-align: end;
+}
+.headind .city-day .day h3 {
+    font-size: 40px;
+    margin-top:10px ;
+}
+.prayer-times  {
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.prayer-times .card {
+    width: 200px;
+    height: 250px;
+    background-color: #fff;
+}
+.prayer-times .card .title h1 {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(59, 59, 238);
+    padding-right: 20px;
+    padding-top: 5px;
+    color: #fff;
+}
+
+.prayer-times .card .time h1 {
+   text-align: center;
+   margin-top: 60px;
+}
+
+/* Media Query */
+
+@media (max-width:768px) {
+    .prayer-times  {
+        margin-top: 25px;
+    }
+    .headind {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width:769px) and (max-width:1270px) {
+    .prayer-times  {
+        margin-top: 25px;
+    }
+    
+}
